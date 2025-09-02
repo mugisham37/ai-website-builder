@@ -9,7 +9,7 @@ export default function Testimonial() {
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
               <Image
-                src="/api/placeholder/80/80"
+                src="/assets/images/head-shot.jpg"
                 alt="Wisnu Anggoro"
                 width={80}
                 height={80}
@@ -39,7 +39,7 @@ export default function Testimonial() {
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
               <Image
-                src="/api/placeholder/80/80"
+                src="/assets/images/head-shot.jpg"
                 alt="Luqman Ibnu Rusyd"
                 width={80}
                 height={80}
@@ -69,7 +69,7 @@ export default function Testimonial() {
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
               <Image
-                src="/api/placeholder/80/80"
+                src="/assets/images/head-shot.jpg"
                 alt="Abraham Zoesa Wangge"
                 width={80}
                 height={80}
@@ -99,7 +99,7 @@ export default function Testimonial() {
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
               <Image
-                src="/api/placeholder/80/80"
+                src="/assets/images/head-shot.jpg"
                 alt="Osmosi Usdiananda"
                 width={80}
                 height={80}
@@ -129,7 +129,7 @@ export default function Testimonial() {
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
               <Image
-                src="/api/placeholder/80/80"
+                src="/assets/images/head-shot.jpg"
                 alt="Mahindra Rhavell"
                 width={80}
                 height={80}
