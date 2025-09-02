@@ -10,10 +10,10 @@ export default function Process() {
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight max-w-5xl">
             Understanding the essentials of effective visual communication,
-            we've developed a tailored visual communication strategy to
+            we&apos;ve developed a tailored visual communication strategy to
             resonating your brand and connect with your audiences. A process to
-            ensure your brand's vision which is effectively translated into a
-            visual language that leaves lasting impression.
+            ensure your brand&apos;s vision which is effectively translated into
+            a visual language that leaves lasting impression.
           </h2>
         </div>
 

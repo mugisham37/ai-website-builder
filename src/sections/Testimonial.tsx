@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Testimonial() {
   return (
     <section className="bg-black text-white py-20 px-6">
@@ -6,9 +8,11 @@ export default function Testimonial() {
         <div className="flex items-center justify-between mb-12">
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
-              <img
+              <Image
                 src="/api/placeholder/80/80"
                 alt="Wisnu Anggoro"
+                width={80}
+                height={80}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -34,9 +38,11 @@ export default function Testimonial() {
         <div className="flex items-center justify-between mb-12">
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
-              <img
+              <Image
                 src="/api/placeholder/80/80"
                 alt="Luqman Ibnu Rusyd"
+                width={80}
+                height={80}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -62,9 +68,11 @@ export default function Testimonial() {
         <div className="flex items-center justify-between mb-12">
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
-              <img
+              <Image
                 src="/api/placeholder/80/80"
                 alt="Abraham Zoesa Wangge"
+                width={80}
+                height={80}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -90,9 +98,11 @@ export default function Testimonial() {
         <div className="flex items-center justify-between mb-12">
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
-              <img
+              <Image
                 src="/api/placeholder/80/80"
                 alt="Osmosi Usdiananda"
+                width={80}
+                height={80}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -118,9 +128,11 @@ export default function Testimonial() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-6">
             <div className="w-20 h-20 rounded-full bg-gray-600 overflow-hidden flex-shrink-0">
-              <img
+              <Image
                 src="/api/placeholder/80/80"
                 alt="Mahindra Rhavell"
+                width={80}
+                height={80}
                 className="w-full h-full object-cover"
               />
             </div>
