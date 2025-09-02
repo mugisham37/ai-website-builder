@@ -1,15 +1,15 @@
 export default function SelectedWorks() {
   return (
-    <section className="px-8 py-20 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-normal text-black mb-16 tracking-wide">
+    <section className="px-12 py-20 bg-white">
+      <div className="max-w-8xl mx-auto">
+        <h2 className="text-4xl font-medium text-black mb-16 ">
           Selected Works
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="flex flex-col lg:flex-row gap-12">
           {/* Mitra Cakrawala International Card */}
-          <div>
-            <div className="aspect-[4/3] bg-gray-200 mb-8 overflow-hidden rounded-sm">
+          <div className="flex-1">
+            <div className="aspect-[2/1] bg-gray-200 mb-8 overflow-hidden rounded-sm">
               <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center">
                 <span className="text-white text-sm">MCI Displays Image</span>
               </div>
@@ -23,18 +23,18 @@ export default function SelectedWorks() {
               identities under a single symbol that reflects its shared vision.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light">
+              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
                 Visual Identity System
               </span>
-              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light">
+              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
                 Collateral Design
               </span>
             </div>
           </div>
 
           {/* Hussel Card */}
-          <div>
-            <div className="aspect-[4/3] bg-gray-200 mb-8 overflow-hidden rounded-sm">
+          <div className="flex-1">
+            <div className="aspect-[2/1] bg-gray-200 mb-8 overflow-hidden rounded-sm">
               <div className="w-full h-full bg-gradient-to-br from-gray-500 to-gray-600 flex items-center justify-center">
                 <span className="text-white text-sm">
                   Hussel Interior Image
@@ -50,16 +50,16 @@ export default function SelectedWorks() {
               Hussel an ideal place for work-related activities.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light">
+              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
                 Visual Identity System
               </span>
-              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light">
+              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
                 Collateral Design
               </span>
-              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light">
+              <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
                 Signage & Wayfinding
               </span>
-              <span className="px-3 py-1.5 text-xs border border-blue-400 text-blue-700 bg-blue-50 font-light">
+              <span className="px-3 py-1.5 text-xs border border-blue-400 text-blue-700 bg-blue-50 font-light rounded-sm">
                 Google Partner
               </span>
             </div>
