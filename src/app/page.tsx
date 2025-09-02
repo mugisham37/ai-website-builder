@@ -3,6 +3,9 @@ import Hero from "@/sections/Hero";
 import BrandSoul from "@/sections/BrandSoul";
 import Services from "@/sections/Services";
 import SelectedWorks from "@/sections/SelectedWorks";
+import CTASection from "@/sections/CTASection";
+import Process from "@/sections/Process";
+import Testimonial from "@/sections/Testimonial";
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <BrandSoul />
       <Services />
       <SelectedWorks />
+      <CTASection />
+      <Process />
+      <Testimonial />
     </>
   );
 }
