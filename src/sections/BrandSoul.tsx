@@ -1,6 +1,6 @@
 "use client";
 
-import LogoLoop from "../components/LogoLoop";
+import { useState } from "react";
 import {
   SiReact,
   SiNextdotjs,
@@ -51,6 +51,110 @@ import {
   SiRubyonrails,
   SiLaravel,
 } from "react-icons/si";
+
+// Define types for LogoLoop props
+interface Logo {
+  node: React.ReactNode;
+  title: string;
+  ariaLabel: string;
+}
+
+interface LogoLoopProps {
+  logos: Logo[];
+  speed?: number;
+  direction?: "left" | "right";
+  logoHeight?: number;
+  gap?: number;
+  pauseOnHover?: boolean;
+  scaleOnHover?: boolean;
+  fadeOut?: boolean;
+  fadeOutColor?: string;
+  ariaLabel: string;
+  className?: string;
+}
+
+// Simple LogoLoop component for demo
+const LogoLoop = ({
+  logos,
+  speed = 80,
+  direction = "left",
+  logoHeight = 40,
+  gap = 40,
+  pauseOnHover = true,
+  scaleOnHover = true,
+  fadeOut = true,
+  fadeOutColor = "#000000",
+  ariaLabel,
+  className = "",
+}: LogoLoopProps) => {
+  const [isPaused, setIsPaused] = useState(false);
+
+  return (
+    <div
+      className={`overflow-hidden relative ${className}`}
+      aria-label={ariaLabel}
+      onMouseEnter={() => pauseOnHover && setIsPaused(true)}
+      onMouseLeave={() => pauseOnHover && setIsPaused(false)}
+    >
+      <div
+        className={`flex animate-scroll ${isPaused ? "paused" : ""}`}
+        style={{
+          animationDuration: `${speed}s`,
+          animationDirection: direction === "right" ? "reverse" : "normal",
+          gap: `${gap}px`,
+        }}
+      >
+        {[...logos, ...logos].map((logo, index) => (
+          <div
+            key={index}
+            className={`flex-shrink-0 flex items-center justify-center transition-transform duration-200 ${
+              scaleOnHover ? "hover:scale-110" : ""
+            }`}
+            style={{ height: `${logoHeight}px`, minWidth: `${logoHeight}px` }}
+            title={logo.title}
+            aria-label={logo.ariaLabel}
+          >
+            <div style={{ fontSize: `${logoHeight * 0.8}px` }}>{logo.node}</div>
+          </div>
+        ))}
+      </div>
+
+      {fadeOut && (
+        <>
+          <div
+            className="absolute left-0 top-0 bottom-0 w-16 pointer-events-none"
+            style={{
+              background: `linear-gradient(to right, ${fadeOutColor}, transparent)`,
+            }}
+          />
+          <div
+            className="absolute right-0 top-0 bottom-0 w-16 pointer-events-none"
+            style={{
+              background: `linear-gradient(to left, ${fadeOutColor}, transparent)`,
+            }}
+          />
+        </>
+      )}
+
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-scroll {
+          animation: scroll linear infinite;
+        }
+        .paused {
+          animation-play-state: paused;
+        }
+      `}</style>
+    </div>
+  );
+};
 
 const techLogos = [
   {
@@ -118,7 +222,6 @@ const techLogos = [
     title: "Google Cloud",
     ariaLabel: "Google Cloud technology logo",
   },
-
   {
     node: <SiPostgresql className="text-[#4169E1]" />,
     title: "PostgreSQL",
@@ -298,12 +401,12 @@ const techLogos = [
 
 export default function BrandSoul() {
   return (
-    <section className="h-screen bg-black px-6 md:px-12 flex items-center">
+    <section className="min-h-screen lg:h-screen bg-black px-4 sm:px-6 md:px-28 flex items-center py-8 sm:py-12 lg:py-0">
       {/* Main content container */}
       <div className="max-w-8xl mx-auto w-full flex flex-col justify-center min-h-0">
         {/* Main text content */}
-        <div className="flex-shrink-0 mb-8 lg:mb-12">
-          <p className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-[48px] leading-tight lg:leading-[65px] font-normal">
+        <div className="flex-shrink-0 mb-6 sm:mb-8 lg:mb-12">
+          <p className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[48px] leading-snug sm:leading-tight lg:leading-[65px] font-normal">
             Your platform should have a soul, like a high-performance soul, as
             the basis for interaction. It&apos;s just a matter of how your
             requirements can resonate and deliver seamlessly, worth crafting. I,{" "}
@@ -313,11 +416,11 @@ export default function BrandSoul() {
         </div>
 
         {/* Separator */}
-        <div className="w-full h-px bg-white/20 flex-shrink-0 mb-8 lg:mb-12"></div>
+        <div className="w-full h-px bg-white/20 flex-shrink-0 mb-6 sm:mb-8 lg:mb-12"></div>
 
         {/* Tech Stack section */}
         <div className="flex-shrink-0">
-          <p className="text-blue-400 text-sm font-medium mb-6 lg:mb-8 tracking-wider">
+          <p className="text-blue-400 text-xs sm:text-sm font-medium mb-4 sm:mb-6 lg:mb-8 tracking-wider">
             [ USED TECH STACK]
           </p>
 
@@ -325,19 +428,22 @@ export default function BrandSoul() {
           <div className="opacity-60">
             <LogoLoop
               logos={techLogos}
-              speed={80}
+              speed={60}
               direction="left"
               logoHeight={40}
               gap={40}
-              pauseOnHover
-              scaleOnHover
+              pauseOnHover={true}
+              scaleOnHover={true}
               fadeOut
               fadeOutColor="#000000"
               ariaLabel="Technology stack"
-              className="py-2"
+              className="py-1 sm:py-2"
             />
           </div>
         </div>
+
+        {/* Mobile-specific bottom padding for better spacing */}
+        <div className="h-4 sm:h-0 flex-shrink-0"></div>
       </div>
     </section>
   );
