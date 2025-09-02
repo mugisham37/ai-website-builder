@@ -4,17 +4,16 @@ export default function CTASection() {
       <div className="max-w-8xl mx-auto">
         <div className="bg-gradient-to-r from-purple-500 to-purple-400 rounded-2xl px-14 py-10 text-center">
           <h2 className="text-4xl font-normal text-white mb-5 leading-tight max-w-2xl mx-auto">
-            Bring your brand to life with visuals that resonate. Let&apos;s start
-            today!
+            Ready to build something amazing? Let&apos;s turn your ideas into reality!
           </h2>
 
           <p className="text-white/90 text-lg mb-7 font-light">
-            Send us a message and let&apos;s collaborate on your project.
+            Get in touch and let&apos;s discuss how I can help bring your project to life.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <button className="bg-black/80 hover:bg-black text-white px-7 py-3 rounded-full flex items-center gap-3 font-medium transition-colors">
-              Let&apos;s Collaborate
+              Let&apos;s Build Together
               <svg
                 width="15"
                 height="15"
@@ -33,7 +32,7 @@ export default function CTASection() {
             </button>
 
             <button className="bg-black/80 hover:bg-black text-white px-7 py-3 rounded-full flex items-center gap-3 font-medium transition-colors">
-              Company Profile
+              View Resume
               <svg
                 width="15"
                 height="15"

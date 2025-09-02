@@ -7,23 +7,36 @@ export default function Footer() {
           {/* Left - Logo/Icon */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
-              {/* Main Icon - Hand with face */}
+              {/* Main Icon - Code brackets with face */}
               <div className="w-40 h-40 relative">
                 <svg
                   viewBox="0 0 160 160"
                   className="w-full h-full text-cyan-300 stroke-current fill-none stroke-2"
                 >
-                  {/* Hand outline */}
-                  <path d="M40 60 Q40 45 55 45 L105 45 Q120 45 120 60 L120 100 Q120 115 105 115 L55 115 Q40 115 40 100 Z" />
-                  {/* Thumb */}
-                  <path d="M35 80 Q25 75 25 85 Q25 95 35 90" />
+                  {/* Code brackets */}
+                  <path
+                    d="M30 40 L20 50 L20 110 L30 120"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M130 40 L140 50 L140 110 L130 120"
+                    strokeLinecap="round"
+                  />
+                  {/* Terminal/screen outline */}
+                  <rect x="40" y="35" width="80" height="90" rx="8" />
                   {/* Face elements */}
                   <circle cx="65" cy="70" r="4" className="fill-current" />
                   <circle cx="95" cy="70" r="4" className="fill-current" />
-                  <path d="M65 90 Q80 100 95 90" />
-                  {/* Hair/decorative wavy lines */}
-                  <path d="M50 50 Q40 40 30 45 Q35 35 25 40" />
-                  <path d="M110 50 Q120 40 130 45 Q125 35 135 40" />
+                  <path d="M65 90 Q80 100 95 90" strokeLinecap="round" />
+                  {/* Code lines */}
+                  <line x1="50" y1="50" x2="70" y2="50" strokeLinecap="round" />
+                  <line
+                    x1="50"
+                    y1="105"
+                    x2="90"
+                    y2="105"
+                    strokeLinecap="round"
+                  />
                 </svg>
               </div>
 
@@ -65,22 +78,23 @@ export default function Footer() {
           <div className="text-center space-y-12">
             <div>
               <h3 className="text-cyan-300 text-sm font-medium mb-4 uppercase tracking-wide">
-                Contact
+                Let&apos;s Connect
               </h3>
               <p className="text-sm leading-relaxed text-white/90">
-                Contact us to evolve your business, whether you&apos;re a<br />
-                global brand or an emerging start-up. Let&apos;s work together.
+                Ready to build something amazing together? Whether you&apos;re a
+                <br />
+                startup or enterprise, let&apos;s turn your ideas into reality.
               </p>
             </div>
 
             <div>
               <h3 className="text-cyan-300 text-sm font-medium mb-4 uppercase tracking-wide">
-                Email
+                Get In Touch
               </h3>
               <p className="text-sm text-white/90">
-                halo@studiovanadium.com
+                moses.mugisha@dev.com
                 <br />
-                +62 821-4266-7785
+                +250 788 123 456
               </p>
             </div>
           </div>
@@ -89,20 +103,14 @@ export default function Footer() {
           <div className="space-y-12">
             <div>
               <h3 className="text-cyan-300 text-sm font-medium mb-6 uppercase tracking-wide">
-                Social Media
+                Find Me Online
               </h3>
               <div className="grid grid-cols-2 gap-y-3 gap-x-4 text-sm">
                 <a
                   href="#"
                   className="flex items-center justify-between hover:text-cyan-300 transition-colors text-white/90"
                 >
-                  Instagram <span className="text-cyan-300">↗</span>
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center justify-between hover:text-cyan-300 transition-colors text-white/90"
-                >
-                  Behance <span className="text-cyan-300">↗</span>
+                  GitHub <span className="text-cyan-300">↗</span>
                 </a>
                 <a
                   href="#"
@@ -114,19 +122,25 @@ export default function Footer() {
                   href="#"
                   className="flex items-center justify-between hover:text-cyan-300 transition-colors text-white/90"
                 >
-                  Youtube <span className="text-cyan-300">↗</span>
+                  Portfolio <span className="text-cyan-300">↗</span>
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center justify-between hover:text-cyan-300 transition-colors text-white/90"
+                >
+                  Dev.to <span className="text-cyan-300">↗</span>
                 </a>
               </div>
             </div>
 
             <div>
               <h3 className="text-cyan-300 text-sm font-medium mb-4 uppercase tracking-wide">
-                Office (WIB)
+                Location (CAT)
               </h3>
               <p className="text-sm text-white/90">
-                Jl. Sarongsong | No. 33 Surabaya, 60299
+                Kigali Innovation City | KG 9 Ave
                 <br />
-                East Java - Indonesia
+                Kigali - Rwanda
               </p>
             </div>
           </div>
@@ -136,10 +150,10 @@ export default function Footer() {
         <div className="relative">
           <div className="flex items-end justify-between">
             <div className="text-7xl lg:text-9xl font-light text-cyan-300 tracking-wider leading-none">
-              Studio — Vanadium
+              Moses &mdash; Mugisha
             </div>
             <div className="text-7xl lg:text-9xl font-bold leading-none bg-cyan-300 text-purple-600 px-4 py-2 rounded-lg">
-              SV
+              MM
             </div>
           </div>
         </div>

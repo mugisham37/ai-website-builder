@@ -3,64 +3,64 @@ export default function SelectedWorks() {
     <section className="px-12 py-20 bg-white">
       <div className="max-w-8xl mx-auto">
         <h2 className="text-4xl font-medium text-black mb-16 ">
-          Selected Works
+          Selected Projects
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-12">
-          {/* Mitra Cakrawala International Card */}
+          {/* E-Commerce Platform Card */}
           <div className="flex-1">
             <div className="aspect-[2/1] bg-gray-200 mb-8 overflow-hidden rounded-sm">
               <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center">
-                <span className="text-white text-sm">MCI Displays Image</span>
+                <span className="text-white text-sm">E-Commerce Platform</span>
               </div>
             </div>
             <h3 className="text-xl font-medium text-black mb-4 leading-tight">
-              Mitra Cakrawala International
+              Full-Stack E-Commerce Platform
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-8 font-light">
-              MCI Group, a parent company overseeing various subsidiaries in
-              four business sectors, aims to unify its disparate corporate
-              identities under a single symbol that reflects its shared vision.
+              Built a complete e-commerce solution with React and Node.js, 
+              featuring real-time inventory management, secure payment processing, 
+              and an admin dashboard that increased client sales by 150%.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
-                Visual Identity System
+                React & TypeScript
               </span>
               <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
-                Collateral Design
+                Node.js & MongoDB
               </span>
             </div>
           </div>
 
-          {/* Hussel Card */}
+          {/* AI-Powered App Card */}
           <div className="flex-1">
             <div className="aspect-[2/1] bg-gray-200 mb-8 overflow-hidden rounded-sm">
               <div className="w-full h-full bg-gradient-to-br from-gray-500 to-gray-600 flex items-center justify-center">
                 <span className="text-white text-sm">
-                  Hussel Interior Image
+                  AI Analytics Dashboard
                 </span>
               </div>
             </div>
             <h3 className="text-xl font-medium text-black mb-4 leading-tight">
-              Hussel
+              AI-Powered Analytics Dashboard
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-8 font-light">
-              Hussel Coffee is a cafe located in the heart of Surabaya, within
-              the Kaloer social space. Its proximity to a coworking space makes
-              Hussel an ideal place for work-related activities.
+              Developed a machine learning-powered analytics platform using 
+              Python and React, processing 100K+ data points daily to deliver 
+              predictive insights that helped clients optimize their operations.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
-                Visual Identity System
+                Python & FastAPI
               </span>
               <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
-                Collateral Design
+                Machine Learning
               </span>
               <span className="px-3 py-1.5 text-xs border border-gray-400 text-gray-700 font-light rounded-sm">
-                Signage & Wayfinding
+                React & D3.js
               </span>
               <span className="px-3 py-1.5 text-xs border border-blue-400 text-blue-700 bg-blue-50 font-light rounded-sm">
-                Google Partner
+                AWS Certified
               </span>
             </div>
           </div>

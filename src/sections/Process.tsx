@@ -5,25 +5,25 @@ export default function Process() {
         {/* Header with blue text */}
         <div className="mb-12">
           <p className="text-blue-400 text-sm font-medium mb-6 tracking-wider uppercase">
-            [OUR PROCESS]
+            [MY PROCESS]
           </p>
 
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-normal leading-14">
-            Understanding the essentials of effective visual communication,
-            we&apos;ve developed a tailored visual communication strategy to
-            resonating your brand and connect with your audiences. A process to
-            ensure your brand&apos;s vision which is effectively translated into
-            a visual language that leaves lasting impression.
+            Understanding the complexity of modern development challenges,
+            I&apos;ve crafted a systematic approach to building robust digital
+            solutions that scale. A proven methodology that transforms your
+            requirements into clean, efficient code that delivers exceptional
+            user experiences and drives business growth.
           </h2>
         </div>
 
         {/* Process Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          {/* Absorb Card */}
+          {/* Analyze Card */}
           <div className="bg-zinc-900 p-5 rounded-lg">
             <div className="mb-4">
-              <h3 className="text-lg font-medium mb-1">Absorb</h3>
-              <p className="text-blue-400 text-xs">→ Identity</p>
+              <h3 className="text-lg font-medium mb-1">Analyze</h3>
+              <p className="text-blue-400 text-xs">→ Discovery</p>
             </div>
 
             <div className="mb-4">
@@ -33,17 +33,17 @@ export default function Process() {
             </div>
 
             <p className="text-gray-300 text-xs leading-relaxed">
-              Collecting and absorbing information about the brand, customers,
-              and industry environment to formulate an effective visual
-              communication strategy.
+              Deep dive into your business requirements, user needs, and 
+              technical constraints to architect the optimal solution that 
+              aligns with your goals and scales with your growth.
             </p>
           </div>
 
-          {/* Encode Card */}
+          {/* Architect Card */}
           <div className="bg-zinc-900 p-5 rounded-lg">
             <div className="mb-4">
-              <h3 className="text-lg font-medium mb-1">Encode</h3>
-              <p className="text-blue-400 text-xs">→ Define</p>
+              <h3 className="text-lg font-medium mb-1">Architect</h3>
+              <p className="text-blue-400 text-xs">→ Design</p>
             </div>
 
             <div className="mb-4">
@@ -54,17 +54,17 @@ export default function Process() {
             </div>
 
             <p className="text-gray-300 text-xs leading-relaxed">
-              Create a concept and define the visual direction in detail to
-              ensure your vision and messages are conveyed clearly and
-              effectively.
+              Design the technical architecture and create detailed blueprints
+              that ensure scalability, security, and maintainability while 
+              delivering optimal performance across all platforms.
             </p>
           </div>
 
-          {/* Generate Card */}
+          {/* Execute Card */}
           <div className="bg-zinc-900 p-5 rounded-lg">
             <div className="mb-4">
-              <h3 className="text-lg font-medium mb-1">Generate</h3>
-              <p className="text-blue-400 text-xs">→ Articulate</p>
+              <h3 className="text-lg font-medium mb-1">Execute</h3>
+              <p className="text-blue-400 text-xs">→ Deliver</p>
             </div>
 
             <div className="mb-4">
@@ -75,8 +75,9 @@ export default function Process() {
             </div>
 
             <p className="text-gray-300 text-xs leading-relaxed">
-              Visualize the concept and apply it across various media to show
-              that your visual communication delivers the intended experience.
+              Transform concepts into production-ready applications using 
+              modern development practices, rigorous testing, and continuous 
+              deployment to deliver solutions that exceed expectations.
             </p>
           </div>
         </div>

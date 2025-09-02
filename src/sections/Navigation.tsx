@@ -7,7 +7,7 @@ export default function Navigation() {
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <span className="text-black font-bold text-xl">EV</span>
+              <span className="text-black font-bold text-xl">MM</span>
             </div>
 
             {/* Navigation Links */}
@@ -29,13 +29,19 @@ export default function Navigation() {
                   href="#"
                   className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium"
                 >
-                  Works
+                  Projects
                 </a>
                 <a
                   href="#"
                   className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium"
                 >
                   About
+                </a>
+                <a
+                  href="#"
+                  className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium"
+                >
+                  Testimonials
                 </a>
               </div>
             </div>
@@ -44,7 +50,7 @@ export default function Navigation() {
           {/* CTA Button */}
           <div className="flex-shrink-0">
             <button className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium flex items-center gap-3 hover:bg-gray-800 transition-colors">
-              Let&apos;s Collaborate
+              Let&apos;s Build Together
               <svg
                 width="16"
                 height="16"
