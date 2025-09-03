@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import Stepper, { Step } from "./Stepper";
+import OnboardingLoader from "./OnboardingLoader";
 
 interface OnboardingModalProps {
   isOpen: boolean;
@@ -50,6 +51,8 @@ export default function OnboardingModal({
 }: OnboardingModalProps) {
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const updateFormData = (field: keyof FormData, value: string | boolean) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -131,23 +134,57 @@ export default function OnboardingModal({
   };
 
   const handleSubmit = () => {
-    // Here you would typically send the data to your backend
-    console.log("Form submitted:", formData);
+    // Start the loading process
+    setIsSubmitting(true);
+    setIsLoading(true);
+  };
 
-    // Reset form and close modal
-    setFormData(initialFormData);
-    setErrors({});
-    onClose();
+  const handleLoadingComplete = async () => {
+    try {
+      // Send email with form data
+      const response = await fetch("/api/send-onboarding-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // You could show a success message here
-    alert(
-      "Thank you! I'll review your project and get back to you within 24-48 hours."
-    );
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
+      const result = await response.json();
+      console.log("Email sent successfully:", result);
+
+      // Reset form and close modal
+      setFormData(initialFormData);
+      setErrors({});
+      setIsLoading(false);
+      setIsSubmitting(false);
+      onClose();
+
+      // Show success message
+      alert(
+        "Thank you! Your project details have been sent successfully. I'll review everything and get back to you within 24-48 hours."
+      );
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setIsLoading(false);
+      setIsSubmitting(false);
+
+      // Show error message but keep modal open
+      alert(
+        "There was an issue sending your information. Please try again or contact me directly at mugisham505@gmail.com"
+      );
+    }
   };
 
   const handleClose = () => {
     setFormData(initialFormData);
     setErrors({});
+    setIsLoading(false);
+    setIsSubmitting(false);
     onClose();
   };
 
@@ -567,6 +604,18 @@ export default function OnboardingModal({
           </div>
         </motion.div>
       </motion.div>
+
+      {/* Onboarding Loader */}
+      <OnboardingLoader
+        loading={isLoading}
+        onComplete={handleLoadingComplete}
+        formData={{
+          name: formData.name,
+          projectType: formData.projectType,
+          timeline: formData.timeline,
+          budget: formData.budget,
+        }}
+      />
     </AnimatePresence>
   );
 }
