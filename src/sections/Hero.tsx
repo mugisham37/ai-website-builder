@@ -65,13 +65,13 @@ export default function Hero() {
     };
   }, [isTouchDevice]);
 
-  // Calculate responsive circle size and position
+  // Calculate responsive circle size and position - SCALED DOWN for better mobile/tablet visibility
   const getCircleSize = () => {
     if (typeof window !== "undefined") {
       const width = window.innerWidth;
-      if (width < 640) return 150; // Mobile
-      if (width < 1024) return 200; // Tablet
-      return 288; // Desktop
+      if (width < 640) return 300; // Mobile - increased from 150
+      if (width < 1024) return 400; // Tablet - increased from 200
+      return 288; // Desktop - kept same
     }
     return 288;
   };
@@ -142,7 +142,7 @@ export default function Hero() {
       >
         <h1
           className="absolute 
-          bottom-12 left-4 
+          bottom-20 left-4 
           sm:bottom-14 sm:left-6 
           md:bottom-16 md:left-8 
           lg:bottom-20 lg:left-24 

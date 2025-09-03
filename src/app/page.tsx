@@ -1,7 +1,7 @@
 import Navigation from "@/sections/Navigation";
 import Hero from "@/sections/Hero";
-import BrandSoul from "@/sections/BrandSoul";
-import Services from "@/sections/Services";
+import BrandSoul from "@/sections/About";
+import Experience from "@/sections/Experience";
 import SelectedWorks from "@/sections/SelectedWorks";
 import CTASection from "@/sections/CTASection";
 import Process from "@/sections/Process";
@@ -14,7 +14,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <BrandSoul />
-      <Services />
+      <Experience />
       <SelectedWorks />
       <CTASection />
       <Process />

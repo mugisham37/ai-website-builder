@@ -101,10 +101,10 @@ export default function Navigation() {
                     <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-black transition-all duration-200 group-hover:w-4 transform -translate-x-1/2"></span>
                   </button>
                   <button
-                    onClick={() => scrollToSection("services")}
+                    onClick={() => scrollToSection("experience")}
                     className="text-black hover:text-gray-600 px-3 py-2 text-sm font-medium transition-all duration-200 hover:bg-gray-50 rounded-lg relative group"
                   >
-                    Services
+                    Experience
                     <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-black transition-all duration-200 group-hover:w-4 transform -translate-x-1/2"></span>
                   </button>
                   <button
@@ -229,12 +229,12 @@ export default function Navigation() {
               </button>
               <button
                 onClick={() => {
-                  scrollToSection("services");
+                  scrollToSection("experience");
                   setIsMenuOpen(false);
                 }}
                 className="text-black hover:text-gray-600 hover:bg-gray-50 block px-3 py-3 text-base font-medium transition-colors rounded-md touch-manipulation w-full text-left"
               >
-                Services
+                Experience
               </button>
               <button
                 onClick={() => {

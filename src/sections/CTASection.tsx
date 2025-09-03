@@ -4,11 +4,13 @@ export default function CTASection() {
       <div className="max-w-8xl mx-auto">
         <div className="bg-gradient-to-r from-purple-500 to-purple-400 rounded-xl sm:rounded-2xl px-6 sm:px-10 md:px-12 lg:px-14 py-8 sm:py-9 md:py-10 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal text-white mb-4 sm:mb-5 leading-tight max-w-xs sm:max-w-lg md:max-w-2xl mx-auto">
-            Ready to build something amazing? Let&apos;s turn your ideas into reality!
+            Ready to build something amazing? Let&apos;s turn your ideas into
+            reality!
           </h2>
 
           <p className="text-white/90 text-base sm:text-lg mb-6 sm:mb-7 font-light max-w-md sm:max-w-none mx-auto">
-            Get in touch and let&apos;s discuss how I can help bring your project to life.
+            Get in touch and let&apos;s discuss how I can help bring your
+            project to life.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-3 justify-center items-stretch sm:items-center">
