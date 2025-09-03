@@ -40,7 +40,10 @@ export default function Testimonial() {
   ];
 
   return (
-    <section className="bg-black text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-12">
+    <section
+      id="testimonials"
+      className="bg-black text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-12"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">

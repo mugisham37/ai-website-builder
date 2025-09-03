@@ -11,11 +11,13 @@ export default function Hero() {
   useEffect(() => {
     // Detect touch device
     const checkTouchDevice = () => {
-      setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+      setIsTouchDevice(
+        "ontouchstart" in window || navigator.maxTouchPoints > 0
+      );
     };
-    
+
     checkTouchDevice();
-    window.addEventListener('resize', checkTouchDevice);
+    window.addEventListener("resize", checkTouchDevice);
 
     const handleMouseMove = (e: MouseEvent) => {
       if (!isTouchDevice) {
@@ -41,11 +43,15 @@ export default function Hero() {
     if (isTouchDevice) {
       window.addEventListener("touchmove", handleTouchMove, { passive: true });
       window.addEventListener("touchend", handleTouchEnd, { passive: true });
-      window.addEventListener("touchstart", (e) => {
-        const touch = e.touches[0];
-        setTouchPosition({ x: touch.clientX, y: touch.clientY });
-        setIsHovering(true);
-      }, { passive: true });
+      window.addEventListener(
+        "touchstart",
+        (e) => {
+          const touch = e.touches[0];
+          setTouchPosition({ x: touch.clientX, y: touch.clientY });
+          setIsHovering(true);
+        },
+        { passive: true }
+      );
     } else {
       window.addEventListener("mousemove", handleMouseMove, { passive: true });
     }
@@ -55,13 +61,13 @@ export default function Hero() {
       window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("touchend", handleTouchEnd);
       window.removeEventListener("touchstart", handleTouchEnd);
-      window.removeEventListener('resize', checkTouchDevice);
+      window.removeEventListener("resize", checkTouchDevice);
     };
   }, [isTouchDevice]);
 
   // Calculate responsive circle size and position
   const getCircleSize = () => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const width = window.innerWidth;
       if (width < 640) return 150; // Mobile
       if (width < 1024) return 200; // Tablet
@@ -75,6 +81,7 @@ export default function Hero() {
 
   return (
     <main
+      id="hero"
       className="min-h-[80vh] bg-black relative overflow-hidden lg:cursor-none"
       onMouseEnter={() => !isTouchDevice && setIsHovering(true)}
       onMouseLeave={() => !isTouchDevice && setIsHovering(false)}
@@ -133,7 +140,8 @@ export default function Hero() {
             : "none",
         }}
       >
-        <h1 className="absolute 
+        <h1
+          className="absolute 
           bottom-12 left-4 
           sm:bottom-14 sm:left-6 
           md:bottom-16 md:left-8 
@@ -147,7 +155,8 @@ export default function Hero() {
           sm:max-w-[calc(100vw-3rem)]
           md:max-w-[calc(100vw-4rem)]
           lg:max-w-none
-        ">
+        "
+        >
           <span className="block sm:inline">Moses</span>
           <span className="hidden sm:inline"> — </span>
           <span className="block sm:inline">Mugisha</span>
@@ -185,7 +194,11 @@ export default function Hero() {
       {/* Touch instruction for mobile - only shows briefly on first load */}
       {isTouchDevice && (
         <div className="absolute top-4 left-4 right-4 z-40 pointer-events-none">
-          <div className={`text-white text-sm text-center bg-black/50 backdrop-blur-sm rounded-lg px-4 py-2 transition-opacity duration-1000 ${isHovering ? 'opacity-0' : 'opacity-100'}`}>
+          <div
+            className={`text-white text-sm text-center bg-black/50 backdrop-blur-sm rounded-lg px-4 py-2 transition-opacity duration-1000 ${
+              isHovering ? "opacity-0" : "opacity-100"
+            }`}
+          >
             Touch and drag to reveal content
           </div>
         </div>

@@ -1,6 +1,9 @@
 export default function Process() {
   return (
-    <section className="bg-black text-white py-12 sm:py-16 md:py-20 px-4 sm:px-8 md:px-16 lg:px-28">
+    <section
+      id="process"
+      className="bg-black text-white py-12 sm:py-16 md:py-20 px-4 sm:px-8 md:px-16 lg:px-28"
+    >
       <div className="max-w-8xl mx-auto">
         {/* Header with blue text */}
         <div className="mb-8 sm:mb-10 md:mb-12">
@@ -33,8 +36,8 @@ export default function Process() {
             </div>
 
             <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
-              Deep dive into your business requirements, user needs, and 
-              technical constraints to architect the optimal solution that 
+              Deep dive into your business requirements, user needs, and
+              technical constraints to architect the optimal solution that
               aligns with your goals and scales with your growth.
             </p>
           </div>
@@ -42,7 +45,9 @@ export default function Process() {
           {/* Architect Card */}
           <div className="bg-zinc-900 p-4 sm:p-5 rounded-lg">
             <div className="mb-3 sm:mb-4">
-              <h3 className="text-base sm:text-lg font-medium mb-1">Architect</h3>
+              <h3 className="text-base sm:text-lg font-medium mb-1">
+                Architect
+              </h3>
               <p className="text-blue-400 text-xs">→ Design</p>
             </div>
 
@@ -55,7 +60,7 @@ export default function Process() {
 
             <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
               Design the technical architecture and create detailed blueprints
-              that ensure scalability, security, and maintainability while 
+              that ensure scalability, security, and maintainability while
               delivering optimal performance across all platforms.
             </p>
           </div>
@@ -75,9 +80,9 @@ export default function Process() {
             </div>
 
             <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
-              Transform concepts into production-ready applications using 
-              modern development practices, rigorous testing, and continuous 
-              deployment to deliver solutions that exceed expectations.
+              Transform concepts into production-ready applications using modern
+              development practices, rigorous testing, and continuous deployment
+              to deliver solutions that exceed expectations.
             </p>
           </div>
         </div>

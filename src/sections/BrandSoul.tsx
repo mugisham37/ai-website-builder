@@ -401,7 +401,10 @@ const techLogos = [
 
 export default function BrandSoul() {
   return (
-    <section className="min-h-screen lg:h-screen bg-black px-4 sm:px-6 md:px-28 flex items-center py-8 sm:py-12 lg:py-0">
+    <section
+      id="about"
+      className="min-h-screen lg:h-screen bg-black px-4 sm:px-6 md:px-28 flex items-center py-8 sm:py-12 lg:py-0"
+    >
       {/* Main content container */}
       <div className="max-w-8xl mx-auto w-full flex flex-col justify-center min-h-0">
         {/* Main text content */}

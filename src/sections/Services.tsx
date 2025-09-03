@@ -2,13 +2,13 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="bg-white pt-20 px-6 md:px-12 lg:px-28">
+    <section id="services" className="bg-white pt-20 px-6 md:px-12 lg:px-28">
       <div className="max-w-8xl mx-auto">
         {/* Main heading - Responsive typography */}
         <div className="mb-12 md:mb-16 lg:mb-20">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] font-normal text-gray-900 leading-tight md:leading-relaxed lg:leading-16">
-            I build scalable digital solutions that transform ideas into 
-            powerful applications. I help businesses unlock their potential 
+            I build scalable digital solutions that transform ideas into
+            powerful applications. I help businesses unlock their potential
             through modern technology and exceptional user experiences.
           </h2>
         </div>
@@ -22,9 +22,9 @@ const Services = () => {
           </div>
           <div className="lg:max-w-[580px] md:max-w-[480px] max-w-full">
             <p className="text-gray-500 leading-relaxed md:leading-6 text-sm md:text-base">
-              I provide end-to-end development services across the full stack, 
-              specializing in modern web applications, mobile solutions, cloud 
-              architecture, AI integration, and performance optimization to 
+              I provide end-to-end development services across the full stack,
+              specializing in modern web applications, mobile solutions, cloud
+              architecture, AI integration, and performance optimization to
               deliver exceptional digital experiences.
             </p>
           </div>
@@ -59,8 +59,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="w-full lg:min-w-80 lg:pl-8 aspect-[16/10] sm:aspect-[2/1] md:aspect-[2/1.2] lg:aspect-[2/1.5] bg-red-600 rounded-lg flex items-center justify-center">
-            </div>
+            <div className="w-full lg:min-w-80 lg:pl-8 aspect-[16/10] sm:aspect-[2/1] md:aspect-[2/1.2] lg:aspect-[2/1.5] bg-red-600 rounded-lg flex items-center justify-center"></div>
           </div>
 
           {/* Mobile & Cloud Solutions */}
@@ -93,8 +92,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="w-full lg:min-w-80 lg:pl-8 aspect-[16/10] sm:aspect-[2/1] md:aspect-[2/1.2] lg:aspect-[2/1.5] bg-red-600 rounded-lg flex items-center justify-center">
-            </div>
+            <div className="w-full lg:min-w-80 lg:pl-8 aspect-[16/10] sm:aspect-[2/1] md:aspect-[2/1.2] lg:aspect-[2/1.5] bg-red-600 rounded-lg flex items-center justify-center"></div>
           </div>
 
           {/* AI Integration & Analytics */}
@@ -127,8 +125,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="w-full lg:min-w-80 lg:pl-8 aspect-[16/10] sm:aspect-[2/1] md:aspect-[2/1.2] lg:aspect-[2/1.5] bg-red-600 rounded-lg flex items-center justify-center">
-            </div>
+            <div className="w-full lg:min-w-80 lg:pl-8 aspect-[16/10] sm:aspect-[2/1] md:aspect-[2/1.2] lg:aspect-[2/1.5] bg-red-600 rounded-lg flex items-center justify-center"></div>
           </div>
         </div>
       </div>
