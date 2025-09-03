@@ -29,8 +29,29 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Environment Variables
+
+Before deploying, make sure to set up your environment variables:
+
+1. Copy `.env.example` to `.env.local`
+2. Get your Resend API key from [https://resend.com/api-keys](https://resend.com/api-keys)
+3. Replace `your_resend_api_key_here` with your actual API key
+
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is ready for deployment on Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com/new)
+3. Add your environment variables in the Vercel dashboard:
+   - `RESEND_API_KEY`: Your Resend API key
+4. Deploy!
+
+The project includes:
+
+- ✅ Optimized build configuration
+- ✅ Environment variable setup
+- ✅ API routes for email functionality
+- ✅ Static asset optimization
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
