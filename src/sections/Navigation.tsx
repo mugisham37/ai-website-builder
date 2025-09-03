@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import OnboardingModal from "../components/OnboardingModal";
 
 // Smooth scroll utility
 const scrollToSection = (sectionId: string) => {
@@ -18,6 +19,7 @@ export default function Navigation() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -135,7 +137,10 @@ export default function Navigation() {
             {/* Right side - CTA Button and Mobile Menu */}
             <div className="flex items-center space-x-3">
               {/* CTA Button - Responsive text and sizing */}
-              <button className="bg-black text-white px-3 sm:px-4 md:px-6 py-2 md:py-2.5 rounded-full text-xs sm:text-sm font-medium flex items-center gap-2 md:gap-3 hover:bg-gray-800 hover:scale-105 transition-all duration-200 min-h-[40px] touch-manipulation shadow-sm hover:shadow-md">
+              <button
+                onClick={() => setIsOnboardingOpen(true)}
+                className="bg-black text-white px-3 sm:px-4 md:px-6 py-2 md:py-2.5 rounded-full text-xs sm:text-sm font-medium flex items-center gap-2 md:gap-3 hover:bg-gray-800 hover:scale-105 transition-all duration-200 min-h-[40px] touch-manipulation shadow-sm hover:shadow-md"
+              >
                 <span className="hidden sm:inline">
                   Let&apos;s Build Together
                 </span>
@@ -267,6 +272,12 @@ export default function Navigation() {
           </div>
         </div>
       </nav>
+
+      {/* Onboarding Modal */}
+      <OnboardingModal
+        isOpen={isOnboardingOpen}
+        onClose={() => setIsOnboardingOpen(false)}
+      />
     </>
   );
 }

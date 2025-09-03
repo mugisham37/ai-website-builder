@@ -133,7 +133,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 };
 
 // Main SelectedWorks component
-export default function SelectedWorks() {
+export default function Projects() {
   return (
     <section
       id="projects"
